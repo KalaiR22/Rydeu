@@ -1,4 +1,6 @@
 import React from 'react'
+import glanceone from '../assets/Images/glanceone.png'
+import glancetwo from '../assets/Images/glancetwo.png'
 
 const Glance = () => {
   return (
@@ -14,7 +16,7 @@ const Glance = () => {
           Rome
         </p>
       </div>
-      <div>
+      <div className="flex justify-between">
         <div className="text-left ">
           <p className="font-lato mb-10 text-oraonge gap-2 text-[20px] font-bold leading-[24px] tracking-[0.04em] flex items-baseline  underline-offset-auto decoration-skip-ink-none">
             <span className=" border-2 border-oraonge rounded-full h-[11px] w-[11px] p-[5px]"></span>{" "}
@@ -42,40 +44,84 @@ const Glance = () => {
             blowing and the serene atmosphere is what makes Rome a must visit
             place for all the travel fanatics out there.
           </p>
+
+          <div className="flex flex-wrap items-start">
+            {/* Text Section */}
+            <p className="flex-1 text-primblack font-lato text-[16px] font-normal leading-[25.52px] tracking-[0.06em] text-left underline-offset-auto decoration-skip-ink-none pr-4">
+              <br /> A perfect blend of gothic ruins, jaw dropping art and
+              lively nights, Rome sets an exemplary example for a place about
+              how it should entertain its travellers. The city wholeheartedly
+              welcomes travellers from a wide array of interests, from awe
+              inspiring monuments to living life at its best, Rome will never
+              fail to surprise you with a new place to explore.
+              <br />
+              <br />A perfect blend of gothic ruins, jaw dropping art and lively
+              nights, Rome sets an exemplary example for a place about how it
+              should entertain its travellers. The city wholeheartedly welcomes
+              travellers from a wide array of interests, from awe
+            </p>
+
+            {/* Image Section */}
+            <div className="w-[375px] flex-shrink-0">
+              <img
+                src={glanceone}
+                alt=""
+                className="w-full h-[250px] object-cover"
+              />
+              <div className="flex items-center gap-2 mt-2">
+                <p className="text-[#737373] font-lato text-[12px] font-normal leading-[14.4px] tracking-[0.04em] text-center underline-offset-auto decoration-skip-ink-none">
+                  Rome Civitavecchia
+                </p>
+                <p className="text-[8px] text-[#737373] font-normal leading-[14.4px] tracking-[0.04em]">
+                  |
+                </p>
+                <p className="text-[#898989] font-lato text-[10px] font-normal italic leading-[14.4px] tracking-[0.04em] text-center underline-offset-auto decoration-skip-ink-none">
+                  Image by{" "}
+                  <span className="text-[#2A6E95]">Alejandro Picasso</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
           <p className="text-primblack font-lato text-[16px] font-normal leading-[25.52px] tracking-[0.06em] text-left underline-offset-auto decoration-skip-ink-none">
-            A perfect blend of gothic ruins, jaw dropping art and lively nights,
-            Rome sets an exemplary example for a place about how it should
-            entertain its travellers. The city wholeheartedly welcomes
-            travellers from a wide array of interests, from awe inspiring
-            monuments to living life at its best, Rome will never fail to
-            surprise you with a new place to explore.
+            inspiring monuments to living life at its best, Rome will never fail
+            to surprise you with a new place to explore.
+            <br /> <br /> The Roman Empire has been an icon when it comes to
+            historical importance. The Roman Empire had cut the ribbons when
+            Augustus Caesar announced to be the first emperor of Rome in 31BC
+            and ended with the fall of Constantinople in 1453CE. Known to be the
+            centre of the Roman Empire, Rome attracts the majority of the crowd
+            due to its rich history and politics.
           </p>
-          <p className="text-primblack font-lato text-[16px] font-normal leading-[25.52px] tracking-[0.06em] text-left underline-offset-auto decoration-skip-ink-none">
-            A perfect blend of gothic ruins, jaw dropping art and lively nights,
-            Rome sets an exemplary example for a place about how it should
-            entertain its travellers. The city wholeheartedly welcomes
-            travellers from a wide array of interests, from awe inspiring
-            monuments to living life at its best, Rome will never fail to
-            surprise you with a new place to explore.
-          </p>
-          <p className="text-primblack font-lato text-[16px] font-normal leading-[25.52px] tracking-[0.06em] text-left underline-offset-auto decoration-skip-ink-none">
-            The Roman Empire has been an icon when it comes to historical
-            importance. The Roman Empire had cut the ribbons when Augustus
-            Caesar announced to be the first emperor of Rome in 31BC and ended
-            with the fall of Constantinople in 1453CE. Known to be the centre of
-            the Roman Empire, Rome attracts the majority of the crowd due to its
-            rich history and politics.
-          </p>
-          <p className="text-primblack font-lato text-[16px] font-normal leading-[25.52px] tracking-[0.06em] text-left underline-offset-auto decoration-skip-ink-none">
-            Referred to as ‘An Eternal City’ in the beginning of the history,
-            Rome is seen to be a dream for music lovers due to the Parco Della
-            Musica which is known to be one of the largest music venues in the
-            world. Not only music, Rome has also set itself in the most wanted
-            places to visit in the world and is the third most visited places in
-            the entire Europe. This place has experienced arts from different
-            periods and became a home for some of the most renowned artists such
-            as Borromini, Bernini, Carracci and Cortona.
-          </p>
+          <br />
+          <div className="flex gap-14">
+            <div className="w-[375px] flex-shrink-0">
+              <img
+                src={glancetwo}
+                alt=""
+                className=" w-full h-[250px] object-cover"
+              />
+              <div className="flex items-center gap-2 mt-2">
+                <p className="text-[#898989] font-lato text-[10px] font-normal italic leading-[14.4px] tracking-[0.04em] text-center underline-offset-auto decoration-skip-ink-none">
+                  Image by{" "}
+                  <span className="text-[#2A6E95]">VIA DEI MONTI PARIOLI</span>
+                </p>
+              </div>
+            </div>
+
+            <p className="text-primblack font-lato text-[16px] font-normal leading-[25.52px] tracking-[0.06em] text-left underline-offset-auto decoration-skip-ink-none">
+              Referred to as ‘An Eternal City’ in the beginning of the history,
+              Rome is seen to be a dream for music lovers due to the Parco Della
+              Musica which is known to be one of the largest music venues in the
+              world. Not only music, Rome has also set itself in the most wanted
+              places to visit in the world and is the third most visited places
+              in the entire Europe. This place has experienced arts from
+              different periods and became a home for some of the most renowned
+              artists such as Borromini, Bernini, Carracci and Cortona.
+            </p>
+          </div>
+
+          <br />
           <p className="text-primblack font-lato text-[16px] font-normal leading-[25.52px] tracking-[0.06em] text-left underline-offset-auto decoration-skip-ink-none">
             Embracing the ancient art, Rome has now decided to use its
             innovation to give birth to contemporary art to keep enhancing their
@@ -85,10 +131,14 @@ const Glance = () => {
             to the Spaghetti alla carbonara- Delicious spaghetti topped with
             bacon, smokey eggs and pecorino is what makes it mouth watering.
             <br />
+            <br />
             Rome has a series of reasons to attract you and slip you into its
             warm arms to rejuvenate your soul with its authentic art,
             awe-inspiring architecture and mouth-watering food.
+            <br />
+            <br />
           </p>
+          <div className="w-[95px] bg-[#B9B9B9] h-[2px] mb-10"></div>
         </div>
       </div>
     </div>

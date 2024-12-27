@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Services from '../components/Services'
 import Glance from '../components/Glance'
+import OtherCities from '../components/OtherCities'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero/>
       <Services/>
       <Glance/>
+      <OtherCities/>
     </div>
   )
 }
