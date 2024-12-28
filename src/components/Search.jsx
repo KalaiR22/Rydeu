@@ -57,7 +57,7 @@ const Search = () => {
       </div>
       <div className="bg-white ">
         <div className="px-[18px]">
-          <div className="border-b border-[#EDEDED] py-[17px] px-[10px] flex items-center">
+          <div className="border-b border-[#EDEDED] py-[17px] px-[10px] flex items-center relative">
             <span className="font-montserrat text-[14px] font-semibold leading-[17.07px] tracking-[0.02em] text-left underline-offset-auto decoration-skip-ink-none text-[#777777]">
               From{" "}
             </span>
@@ -66,6 +66,7 @@ const Search = () => {
               placeholder="( airport, hotel, address )"
               class="px-1 w-full border-none font-montserrat text-[14px] font-medium placeholder:font-montserrat placeholder:text-[14px] placeholder:font-regular placeholder:leading-[17.07px] placeholder:tracking-[0.02em] placeholder:text-left placeholder:underline-offset-auto placeholder:decoration-skip-ink-none placeholder:text-[#C1C1C1] focus:outline-none focus:ring-0"
             />
+            <img src={swap} alt="" className="absolute -bottom-3 right-6 "/>
           </div>
           <div className="border-b border-[#EDEDED] py-[17px] px-[10px] flex items-center">
             <span className="font-montserrat text-[14px] font-semibold leading-[17.07px] tracking-[0.02em] text-left underline-offset-auto decoration-skip-ink-none text-[#777777]">
