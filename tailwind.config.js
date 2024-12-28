@@ -28,6 +28,7 @@ export default {
         primblack: "#484848",
         oraonge: "#FF8924",
         secblack: "#161616",
+        lightwhite: "#EFEFEF",
       },
       letterSpacing: {
         custom: "0.02em",

@@ -18,3 +18,11 @@
     height: 137px;
 }
 
+
+.helpbg{
+    background-image: url('./assets/Images/helpbg.png');
+    height: 471px;
+   background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
