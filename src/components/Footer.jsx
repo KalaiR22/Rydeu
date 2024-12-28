@@ -5,8 +5,8 @@ import { company, helpcenter, ourservice } from '../constants';
 const Footer = () => {
   return (
     <div className="bg-black text-white mt-5">
-      <div className="flex mx-[54px] justify-between flex-wrap text-left py-16 border-b-[0.1px] border-[#efefef39]">
-        <div className="flex-col items-center mx-auto">
+      <div className="flex mx-[35px] md:mx-[54px] sm:justify-between flex-row flex-wrap gap-10 text-left py-16 border-b-[0.1px] border-[#efefef39]">
+        <div className="flex-col items-center sm:mx-auto">
           <div>
             <img src={footerlogo} alt="" className="w-[121px] h-[39px]" />
             <p className="font-roboto text-[13px] mt-2 font-normal leading-[15.23px] tracking-[0.04em] text-left  underline-offset-[from-font] decoration-skip-ink-none text-white">
@@ -17,7 +17,7 @@ const Footer = () => {
             Connect with us
           </p>
         </div>
-        <div className="flex-col items-center mx-auto">
+        <div className="flex-col items-center sm:mx-auto">
           <h1 className="font-lato text-[14px] font-bold leading-[16.8px] tracking-[0.07em] text-left  underline-offset-[from-font] decoration-skip-ink-none">
             COMPANY
           </h1>
@@ -32,7 +32,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex-col items-center mx-auto">
+        <div className="flex-col items-center sm:mx-auto">
           <h1 className="font-lato text-[14px] font-bold leading-[16.8px] tracking-[0.07em] text-left  underline-offset-[from-font] decoration-skip-ink-none">
             HELP CENTER
           </h1>
@@ -47,7 +47,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex-col items-center mx-auto">
+        <div className="flex-col items-center sm:mx-auto">
           <h1 className="font-lato text-[14px] font-bold leading-[16.8px] tracking-[0.07em] text-left  underline-offset-[from-font] decoration-skip-ink-none">
             OUR SERVICES
           </h1>

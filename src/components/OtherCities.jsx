@@ -4,7 +4,7 @@ import { cities } from '../constants';
 const OtherCities = () => {
   return (
     <div className="px-[58px] py-10">
-      <p className="font-lato text-[28px] mb-8 text-primblack font-black leading-[33.6px] tracking-[0.04em]  underline-offset-auto decoration-skip-ink-none">
+      <p className="font-lato text-center md:text-left text-[28px] mb-8 text-primblack font-black leading-[33.6px] tracking-[0.04em]  underline-offset-auto decoration-skip-ink-none">
         Other cities{" "}
       </p>
       <div className="flex flex-wrap px-4 gap-8 items-center justify-center">

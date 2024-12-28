@@ -18,8 +18,8 @@ const Offer = () => {
           Offer Price
         </p>
       </div>
-      <div className="flex">
-        <div className="mr-16">
+      <div className="flex flex-wrap lg:flex-nowrap">
+        <div className="xl:mr-16 lg:mr-10  mx-auto">
           <p className="font-lato ml-2 mb-3 text-[12px] font-normal leading-[15.6px] tracking-[0.04em] text-left underline-offset-auto decoration-skip-ink-none text-[#161616]">
             Type of booking
           </p>
@@ -28,7 +28,7 @@ const Offer = () => {
           <div className="relative">
             <div
               onClick={() => setIsOpen(!isOpen)}
-              className="border p-2 rounded-[4px] h-[44px] ml-2 flex justify-between items-center w-[360px] bg-[#F3F3F3] border-[#E2E2E2] text-primblack font-lato text-sm font-extrabold leading-[16.9px] tracking-[0.04em] text-left cursor-pointer"
+              className="border p-2 rounded-[4px] h-[44px] ml-2 flex justify-between items-center w-[270px] sm:w-[360px] bg-[#F3F3F3] border-[#E2E2E2] text-primblack font-lato text-sm font-extrabold leading-[16.9px] tracking-[0.04em] text-left cursor-pointer"
             >
               {paymentOption ? paymentOption : "Select Payment Method"}{" "}
               <img src={dashvector} alt="" className="h-fit w-fit" />
@@ -36,12 +36,12 @@ const Offer = () => {
 
             {/* Dropdown menu */}
             {isOpen && (
-              <ul className="absolute ml-2 bg-white border border-[#E2E2E2] rounded-[4px] w-[360px] mt-0 max-h-[200px] overflow-auto z-10 shadow-[0px_2px_4px_0px_#0000001F]">
+              <ul className="absolute ml-2 bg-white border border-[#E2E2E2] rounded-[4px]  w-[270px] sm:w-[360px] mt-0 max-h-[200px] overflow-auto z-10 shadow-[0px_2px_4px_0px_#0000001F]">
                 <li
                   onClick={() => handleChange("Pre-Payment")}
-                  className="p-2 text-[13px] font-medium leading-[16.9px] tracking-[0.04em] cursor-pointer hover:bg-[#f3f3f3] py-4 flex items-center "
+                  className="p-2 py-4 text-[13px] font-medium leading-[16.9px] tracking-[0.04em] cursor-pointer hover:bg-[#f3f3f3]"
                 >
-                  Pre-Payment{" "}
+                  Pre Payment{" "}
                   <span className="font-lato text-[11px] font-medium leading-[15.6px] tracking-[0.04em] text-left  decoration-skip-none text-[#A0A0A0] ml-1">
                     (Full amount paid on the website)
                   </span>
@@ -65,23 +65,23 @@ const Offer = () => {
             )}
           </div>
 
-          <div className="w-[360px] flex gap-2 mt-4 ml-2">
-            <div className="w-1/2">
+          <div className=" w-[270px] sm:w-[360px] flex flex-col sm:flex-row gap-2 mt-4 ml-2 ">
+            <div className="w-full sm:w-1/2">
               <p className="font-lato  mb-2 text-[12px] font-normal leading-[15.6px] tracking-[0.04em] text-left underline-offset-auto decoration-skip-ink-none text-[#161616]">
                 One Way
               </p>
               <input
                 type="text"
-                className="focus:outline-none focus:ring-0 border border-[#E2E2E2]  bg-[#F7F7F7] rounded-[4px]  h-[44px]"
+                className="focus:outline-none focus:ring-0 border w-full border-[#E2E2E2]  bg-[#F7F7F7] rounded-[4px]  h-[44px]"
               />
             </div>
-            <div className="w-1/2">
+            <div className="w-full sm:w-1/2">
               <p className="font-lato  mb-2 text-[12px] font-normal leading-[15.6px] tracking-[0.04em] text-left underline-offset-auto decoration-skip-ink-none text-[#161616]">
                 Return
               </p>
               <input
                 type="text"
-                className="focus:outline-none focus:ring-0 border border-[#E2E2E2]  bg-[#F7F7F7] rounded-[4px]  h-[44px]"
+                className="focus:outline-none focus:ring-0 border w-full border-[#E2E2E2]  bg-[#F7F7F7] rounded-[4px]  h-[44px]"
               />
             </div>
           </div>
@@ -90,8 +90,8 @@ const Offer = () => {
             Offer Available untill <span className="ml-4">10th May, 19:00</span>
           </p>
         </div>
-        <div className="h-[180px] border border-[#EFEFEF]"></div>
-        <div className="flex justify-evenly w-full">
+        <div className="h-[180px] border border-[#EFEFEF] hidden lg:block"></div>
+        <div className="flex justify-evenly w-full flex-wrap mt-14 lg:mt-0 gap-8">
           <div>
             <p className="text-[#161616]  font-lato text-[12px] font-extrabold leading-[15.6px] tracking-[0.04em] text-left underline-offset-[from-font] decoration-skip-ink-none">
               Pre-Payment

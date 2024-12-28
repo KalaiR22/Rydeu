@@ -6,7 +6,7 @@ import HelpComp from '../components/HelpComp'
 const Help = () => {
   return (
     <div >
-      <Header/>
+      
       <HelpHero/>
       <HelpComp/>
     </div>

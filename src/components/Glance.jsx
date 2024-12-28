@@ -4,7 +4,7 @@ import glancetwo from '../assets/Images/glancetwo.png'
 
 const Glance = () => {
   return (
-    <div className="px-[58px]">
+    <div className="px-[35px] md:px-[58px]">
       <div className="flex my-20 gap-5 ">
         <p className="font-lato text-[12px] text-[#C8C8C8] font-normal leading-[14.4px] tracking-[0.04em] text-center underline-offset-auto decoration-skip-ink-none">
           Home
@@ -16,26 +16,26 @@ const Glance = () => {
           Rome
         </p>
       </div>
-      <div className="flex justify-between">
-        <div className="text-left ">
-          <p className="font-lato mb-10 text-oraonge gap-2 text-[20px] font-bold leading-[24px] tracking-[0.04em] flex items-baseline  underline-offset-auto decoration-skip-ink-none">
+      <div className="flex flex-col lg:flex-row  gap-10 xl:justify-between ">
+        <div className="text-left flex flex-row flex-wrap lg:flex-col gap-10 ">
+          <p className="font-lato  text-oraonge gap-2 text-[20px] font-bold leading-[24px] tracking-[0.04em] flex items-baseline  underline-offset-auto decoration-skip-ink-none">
             <span className=" border-2 border-oraonge rounded-full h-[11px] w-[11px] p-[5px]"></span>{" "}
             At a Glance
           </p>
-          <p className="font-lato text-[12px] mb-10 flex gap-3 items-center text-[#898989] font-normal leading-[14.4px] tracking-[0.04em]  underline-offset-auto decoration-skip-ink-none">
+          <p className="font-lato text-[12px]  flex gap-3 items-center text-[#898989] font-normal leading-[14.4px] tracking-[0.04em]  underline-offset-auto decoration-skip-ink-none">
             <span className="h-[6px] w-[6px] bg-[#C8C8C8] rounded-full"></span>
             Transportation in Rome
           </p>
-          <p className="font-lato text-[12px] mb-10 flex gap-3 items-center text-[#898989] font-normal leading-[14.4px] tracking-[0.04em]  underline-offset-auto decoration-skip-ink-none">
+          <p className="font-lato text-[12px]  flex gap-3 items-center text-[#898989] font-normal leading-[14.4px] tracking-[0.04em]  underline-offset-auto decoration-skip-ink-none">
             <span className="h-[6px] w-[6px] bg-[#C8C8C8] rounded-full"></span>
             Airport Transfers in Rome
           </p>
-          <p className="font-lato text-[12px] mb-10 flex gap-3 items-center text-[#898989] font-normal leading-[14.4px] tracking-[0.04em]  underline-offset-auto decoration-skip-ink-none">
+          <p className="font-lato text-[12px]  flex gap-3 items-center text-[#898989] font-normal leading-[14.4px] tracking-[0.04em]  underline-offset-auto decoration-skip-ink-none">
             <span className="h-[6px] w-[6px] bg-[#C8C8C8] rounded-full"></span>{" "}
             Sightseeing Transportation
           </p>
         </div>
-        <div className="w-[925px]">
+        <div className="lg:w-[925px]">
           <p className="text-primblack font-lato text-[16px] font-normal leading-[25.52px] tracking-[0.06em] text-left underline-offset-auto decoration-skip-ink-none">
             Nestled in the heart of Italian Peninsula, Rome is the capital of
             the country and one of the most populated cities in Italy. From its
@@ -55,14 +55,17 @@ const Glance = () => {
               inspiring monuments to living life at its best, Rome will never
               fail to surprise you with a new place to explore.
               <br />
-              <br />A perfect blend of gothic ruins, jaw dropping art and lively
-              nights, Rome sets an exemplary example for a place about how it
-              should entertain its travellers. The city wholeheartedly welcomes
-              travellers from a wide array of interests, from awe
+              <br />{" "}
+              <span className="hidden lg:block">
+                A perfect blend of gothic ruins, jaw dropping art and lively
+                nights, Rome sets an exemplary example for a place about how it
+                should entertain its travellers. The city wholeheartedly
+                welcomes travellers from a wide array of interests, from awe
+              </span>
             </p>
 
             {/* Image Section */}
-            <div className="w-[375px] flex-shrink-0">
+            <div className="sm:w-[375px] w-[300px] px-1 sm:px-0 flex-shrink-0">
               <img
                 src={glanceone}
                 alt=""
@@ -82,24 +85,37 @@ const Glance = () => {
               </div>
             </div>
           </div>
-
-          <p className="text-primblack font-lato text-[16px] font-normal leading-[25.52px] tracking-[0.06em] text-left underline-offset-auto decoration-skip-ink-none">
+          <p className="flex-1 lg:hidden block text-primblack font-lato text-[16px] font-normal leading-[25.52px] tracking-[0.06em] text-left underline-offset-auto decoration-skip-ink-none pr-4">
+            <br /> A perfect blend of gothic ruins, jaw dropping art and lively
+            nights, Rome sets an exemplary example for a place about how it
+            should entertain its travellers. The city wholeheartedly welcomes
+            travellers from a wide array of interests, from awe inspiring
+            monuments to living life at its best, Rome will never fail to
+            surprise you with a new place to explore.
+            <br />
+            <br />{" "}
+          </p>
+          <p className="text-primblack font-lato hidden lg:block text-[16px] font-normal leading-[25.52px] tracking-[0.06em] text-left underline-offset-auto decoration-skip-ink-none">
             inspiring monuments to living life at its best, Rome will never fail
             to surprise you with a new place to explore.
-            <br /> <br /> The Roman Empire has been an icon when it comes to
-            historical importance. The Roman Empire had cut the ribbons when
-            Augustus Caesar announced to be the first emperor of Rome in 31BC
-            and ended with the fall of Constantinople in 1453CE. Known to be the
-            centre of the Roman Empire, Rome attracts the majority of the crowd
-            due to its rich history and politics.
+            <br />
+            <br />
+          </p>
+          <p className="text-primblack font-lato text-[16px] font-normal leading-[25.52px] tracking-[0.06em] text-left underline-offset-auto decoration-skip-ink-none">
+            The Roman Empire has been an icon when it comes to historical
+            importance. The Roman Empire had cut the ribbons when Augustus
+            Caesar announced to be the first emperor of Rome in 31BC and ended
+            with the fall of Constantinople in 1453CE. Known to be the centre of
+            the Roman Empire, Rome attracts the majority of the crowd due to its
+            rich history and politics.
           </p>
           <br />
-          <div className="flex gap-14">
-            <div className="w-[375px] flex-shrink-0">
+          <div className="flex flex-col lg:flex-row gap-14">
+            <div className="sm:w-[375px] px-1 sm:px-0 flex-shrink-0">
               <img
                 src={glancetwo}
                 alt=""
-                className=" w-full h-[250px] object-cover"
+                className=" w-full h-[250px] object-cover "
               />
               <div className="flex items-center gap-2 mt-2">
                 <p className="text-[#898989] font-lato text-[10px] font-normal italic leading-[14.4px] tracking-[0.04em] text-center underline-offset-auto decoration-skip-ink-none">

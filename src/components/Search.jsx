@@ -17,7 +17,7 @@ const Search = () => {
   };
 
   return (
-    <div className="w-[430px] h-[491px] bg-white rounded-[7px] shadow-[0px_4px_20px_0px_#00000030] mt-[111px] ">
+    <div className="w-full sm:w-[430px] h-[491px] bg-white rounded-[7px] shadow-[0px_4px_20px_0px_#00000030] mt-[111px] px-1 sm:px-0 ">
       <div className="h-[54px] bg-[#F4F4F4] p-[4px] flex justify-between items-center rounded-[6px]">
         {/* One way Tab */}
         <p
@@ -130,7 +130,7 @@ const Search = () => {
             </label>
           </div>
         </div>
-        <button className="rounded-[6px] w-[422px] mx-auto h-[46px] bg-primary flex items-center justify-center font-lato text-[18px] font-bold leading-[21.6px] tracking-[0.02em] text-center underline-offset-auto decoration-skip-ink-none text-white ">
+        <button className="rounded-[6px] w-full sm:w-[422px] mx-auto h-[46px] bg-primary flex items-center justify-center font-lato text-[18px] font-bold leading-[21.6px] tracking-[0.02em] text-center underline-offset-auto decoration-skip-ink-none text-white ">
           Search
         </button>
       </div>

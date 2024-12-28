@@ -30,13 +30,13 @@ const OfferAnc = () => {
       <p className="text-[#161616] mt-6 font-lato text-[12px] font-bold leading-[15.6px] tracking-[0.04em] text-left underline-offset-[from-font] decoration-skip-ink-none">
         Offer Ancillary
       </p>
-      <div className="flex flex-wrap gap-16 mt-4">
+      <div className="flex flex-wrap gap-10 md:gap-12 xl:gap-16 mt-4">
         {/* Flexbox for layout */}
         {offserv.map((off) => (
           <div key={off.tit} className="flex flex-col items-center">
             {/* Center each item */}
             <div
-              className={`h-24 w-24 flex items-center justify-center rounded-full border text-[2rem] mb-2 cursor-pointer 
+              className={`md:h-24 md:w-24 h-16 w-16 flex items-center justify-center rounded-full border text-[2rem] mb-2 cursor-pointer 
                 ${
                   selectedItems.includes(off.tit)
                     ? "border-[#FF8924] bg-[#FE604E24] text-[#FF8924]" // Apply selected styles
